@@ -15,3 +15,6 @@ def bucket(n, N):
             distinct_set.add(rand_int)
         distinct_num_counts.append(len(distinct_set))
     return distinct_num_counts
+
+# storing bucket function's result into 'result' variable
+result = bucket(n, N)
