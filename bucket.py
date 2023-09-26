@@ -18,3 +18,11 @@ def bucket(n, N):
 
 # storing bucket function's result into 'result' variable
 result = bucket(n, N)
+
+# plot of result with labels and axis grids
+plt.hist(result, bins = range(1, n), rwidth = 0.5) # plotting the graph with 0.5 spaces between
+plt.xlabel('Number of the Distinct Values') # label of axis x
+plt.ylabel('Frequency') # label of axis y
+plt.title(f'Distribution of Distinct Values for {n} Random Integers & {N} Buckets') # title of the graph
+plt.grid(axis = 'both') # dividing into both x and y axis grids
+plt.show() # show the graph
